@@ -28,6 +28,20 @@
 
         }
     }  
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        height: $standar-size * 13.9;
+        justify-content: space-evenly;
+
+        .container-title{
+            margin-left: 0;
+
+        }
+        
+    }  
+     
     
 }
 
@@ -69,6 +83,13 @@
         }
              
     }
+    
+    @media screen and (max-width: 768px) {
+        margin-right: 0;
+        width: 100%;
+        max-width:$standar-size * 36.5;    
+    }
+   
 }
 
 @keyframes shake {

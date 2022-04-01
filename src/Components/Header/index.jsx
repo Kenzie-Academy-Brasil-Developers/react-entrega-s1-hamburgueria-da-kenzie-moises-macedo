@@ -14,7 +14,7 @@ const Header = ({props}) => {
                 </h1>
             </div>
             <form className="container-search">
-                <input  type={'text'}placeholder="Digitar pesquisa" pattern="[a-z]*"/>
+                <input  type={'text'}placeholder="Digitar pesquisa" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" title='verfique'/>
                 <Button button='Pesquisar' icons={''}/> 
             </form>
         </section>

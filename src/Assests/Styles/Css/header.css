@@ -41,6 +41,17 @@
   font-size: 14px;
   margin-left: 5px;
 }
+@media screen and (max-width: 768px) {
+  .container-header {
+    display: flex;
+    flex-direction: column;
+    height: 139px;
+    justify-content: space-evenly;
+  }
+  .container-header .container-title {
+    margin-left: 0;
+  }
+}
 
 .container-search {
   display: flex;
@@ -72,6 +83,13 @@
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   transition: all 100ms ease-out;
+}
+@media screen and (max-width: 768px) {
+  .container-search {
+    margin-right: 0;
+    width: 100%;
+    max-width: 365px;
+  }
 }
 
 @keyframes shake {
