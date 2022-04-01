@@ -1,0 +1,9 @@
+@import './global.scss';
+
+.button{
+    @include button-geral(107px);
+    .text-button {
+        @include button-text;
+    }
+}
+

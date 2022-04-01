@@ -1,0 +1,47 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Colors*/
+/*Primary Palette*/
+/*Grey Scale Palette*/
+/*FeedBack Palette*/
+/*Font*/
+/*Inter*/
+/*Size*/
+/*Standar Size*/
+/*Mixin*/
+.button {
+  width: 107px;
+  height: 40px;
+  background-color: #27AE60;
+  border: 2px solid #27AE60;
+  padding: 0px, 20px, 0px, 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #93D7AF;
+  border: 2px solid #93D7AF;
+}
+.button .text-button {
+  width: 67px;
+  height: 17px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=button.css.map */
