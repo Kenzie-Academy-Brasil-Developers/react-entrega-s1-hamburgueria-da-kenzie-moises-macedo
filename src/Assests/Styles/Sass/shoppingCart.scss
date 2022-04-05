@@ -1,0 +1,55 @@
+@import './global.scss';
+
+.container-main-cart{
+    margin-right: $standar-size * 11.5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: $standar-size * 36.5;
+}
+
+.container-title-cart{
+    background-color: $color-primary;
+    border-radius: ($standar-size - 5px)($standar-size - 5px) 0px 0px;
+    height: $standar-size * 6.5;
+    margin-top: $standar-size * 5;
+
+    display: flex;
+    align-items: center;
+
+    h2{
+        color: $color-grey-0;
+        font-size: $standar-size * 1.8;
+        font-weight: 700;
+        width: $standar-size 18.7;
+        margin-left: $standar-size *1.5;
+    }
+}
+.container-description-cart{
+    background-color: $color-grey-0 ;
+    min-height: $standar-size *15.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ul{
+        li{
+            h2{
+                width: 100%;
+                max-width: $standar-size * 34.2;
+                font-size: $standar-size * 1.8;
+                font-weight: 700;
+                color: $color-grey-100
+            }
+            p{
+                width: 100%;
+                max-width: $standar-size * 34.2;
+                font-size: $standar-size * 1.4;
+                font-weight: 400;
+                color: $color-grey-50;
+                margin-top: $standar-size;
+
+            }
+        };
+    }
+}

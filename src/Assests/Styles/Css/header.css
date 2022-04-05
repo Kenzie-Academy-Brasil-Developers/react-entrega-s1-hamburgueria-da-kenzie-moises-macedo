@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /*Reset*/
 * {
   margin: 0;
@@ -61,17 +62,20 @@
   height: 60px;
   width: 365px;
   padding: 0px 10px 0px 15px;
+  border: 2px solid #E0E0E0;
   border-radius: 8px;
   margin-right: 115px;
 }
 .container-search:focus-within {
-  border: 2px solid black;
-  transition: all 100ms ease-out;
+  border: 2px solid #333333;
+  transition: all 500ms ease-out;
+  border-top: 2px solid #333333;
+  border-bottom: 2px solid #333333;
 }
 .container-search input {
   color: #333333;
   width: 123px;
-  height: 60px;
+  height: 50px;
   font-size: 16px;
 }
 .container-search input:invalid {
@@ -80,9 +84,7 @@
 }
 .container-search input:focus {
   outline: 0;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  transition: all 100ms ease-out;
+  transition: all 500ms ease-out;
 }
 @media screen and (max-width: 768px) {
   .container-search {

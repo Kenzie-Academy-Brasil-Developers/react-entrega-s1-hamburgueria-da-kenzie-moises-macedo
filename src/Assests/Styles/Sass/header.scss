@@ -11,6 +11,7 @@
     .container-title{
         margin-left: $standar-size * 11.5;
         width: $standar-size * 15.9;
+        cursor: pointer;
 
 
         h1{
@@ -53,12 +54,16 @@
     height: $standar-size * 6;
     width: $standar-size * 36.5;
     padding: 0px 10px 0px 15px;
+    border: 2px solid $color-grey-20;
     border-radius: $standar-size - 2;
     margin-right: $standar-size * 11.5;
+    
 
     &:focus-within{
-        border: 2px solid black;
-        transition: all 100ms ease-out;        
+        border: 2px solid $color-grey-100;;
+        transition: all 500ms ease-out; 
+        border-top: 2px solid $color-grey-100;
+        border-bottom: 2px solid $color-grey-100;       
         
     } 
 
@@ -67,8 +72,9 @@
     input {
         color: $color-grey-100;
         width: $standar-size * 12.3;
-        height: $standar-size * 6;
+        height: $standar-size * 5;
         font-size: $standar-size * 1.6;  
+        
 
         &:invalid{
             animation: shake 200ms;
@@ -76,10 +82,8 @@
         }
 
         &:focus{
-            outline: 0;
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;    
-            transition: all 100ms ease-out;         
+            outline: 0;              
+            transition: all 500ms ease-out;         
         }
              
     }

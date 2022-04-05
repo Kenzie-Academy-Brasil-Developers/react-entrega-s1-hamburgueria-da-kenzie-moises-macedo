@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /*Reset*/
 *{
     margin: 0;
@@ -64,8 +65,10 @@ $standar-size:10px;
         background-color: $color-primary-50;
         border: 2px solid $color-primary-50;
     }
-
-    
+    &:active{
+        background-color: $color-primary;
+        border: 2px solid $color-primary;
+    }    
 }
 
 @mixin button-text {
