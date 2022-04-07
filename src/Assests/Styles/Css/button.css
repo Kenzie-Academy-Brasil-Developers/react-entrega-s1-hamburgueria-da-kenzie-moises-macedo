@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /*Reset*/
 * {
   margin: 0;
@@ -33,6 +34,10 @@
 .button:hover {
   background-color: #93D7AF;
   border: 2px solid #93D7AF;
+}
+.button:active {
+  background-color: #27AE60;
+  border: 2px solid #27AE60;
 }
 .button .text-button {
   width: 67px;
