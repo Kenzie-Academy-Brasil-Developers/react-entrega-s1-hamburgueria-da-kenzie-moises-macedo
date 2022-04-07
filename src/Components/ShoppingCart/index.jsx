@@ -1,20 +1,15 @@
-import "../../Assests/Styles/Css/shoppingCart.css"
+const ShoppingCart = ({ product, RemoveClick }) => {
+  return (
+    <div className="description-cart-add">
+      <div>
+        <img src={product.img} alt={product.name}/>
+        <h3>{product.name}
+          <p>{product.category}</p>
+        </h3>
+      </div>       
+      <button onClick={() => RemoveClick(product)}>Remover</button>
+    </div>
+  );
+};
 
-const ShoppingCart = () => {
-
-    return(
-        <div className="container-main-cart">
-            <div className="container-title-cart">
-                <h2>Carrinho de compras</h2>
-            </div>
-            <div className="container-description-cart">
-                <ul className="container-description-empty">
-                    <li><h2>Sua Sacola está vazia</h2></li>
-                    <li><p>adicione itens</p></li>                
-                </ul>                
-            </div>
-        </div>
-    )
-}
-
-export default ShoppingCart
+export default ShoppingCart;

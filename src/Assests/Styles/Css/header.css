@@ -30,6 +30,7 @@
 .container-header .container-title {
   margin-left: 115px;
   width: 159px;
+  cursor: pointer;
 }
 .container-header .container-title h1 {
   height: 37px;

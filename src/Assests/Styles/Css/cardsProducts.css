@@ -19,22 +19,44 @@
 /*Size*/
 /*Standar Size*/
 /*Mixin*/
+.container-geral-main {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .container-geral-main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .container-main {
   display: flex;
   justify-content: space-between;
-}
-
-.container-product {
-  display: flex;
-  width: 60%;
-  margin-left: 115px;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 50px;
-  transition: transform 100ms ease-in-out;
+  margin-left: 115px;
+  width: 60%;
 }
-.container-product .container-card-product:nth-child(n+4) {
-  margin-top: 30px;
+@media (max-width: 1500px) {
+  .container-main {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1200px) {
+  .container-main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 80%;
+    flex: none;
+    height: 380px;
+    margin-left: 0;
+  }
 }
 
 .container-card-product {
@@ -52,11 +74,39 @@
   border: 2px solid #333333;
   transition: all 200ms ease-out;
 }
+.container-card-product:nth-child(n+4) {
+  margin-top: 30px;
+}
+@media (max-width: 1500px) {
+  .container-card-product:nth-child(n+3) {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .container-card-product {
+    flex: none;
+    max-width: 250px;
+    transition: none;
+  }
+  .container-card-product:nth-child(n+3) {
+    margin-top: 0px;
+  }
+  .container-card-product:nth-child(n+6) {
+    margin-right: 20px;
+  }
+  .container-card-product:nth-child(n+2) {
+    margin-left: 20px;
+  }
+  .container-card-product:hover {
+    transform: scale(1);
+  }
+}
 
 .container-img {
   background-color: #F5F5F5;
   width: 100%;
   max-width: 296px;
+  text-align: center;
 }
 .container-img img {
   object-fit: cover;
@@ -91,6 +141,11 @@
   font-size: 14px;
   font-weight: 600;
   color: #27AE60;
+}
+@media (max-width: 1200px) {
+  .container-geral-description {
+    margin-left: 10px;
+  }
 }
 
 /*# sourceMappingURL=cardsProducts.css.map */
